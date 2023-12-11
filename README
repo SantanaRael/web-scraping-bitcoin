@@ -1,0 +1,28 @@
+# README - Scraping de Valor do Bitcoin
+
+Este script em Node.js realiza o scraping do valor do Bitcoin em reais (BRL) a partir do site do Google Finance. Ele utiliza as bibliotecas Axios para fazer requisições HTTP e Cheerio para analisar e manipular o HTML da página.
+
+## Requisitos
+
+Certifique-se de ter o Node.js instalado em seu sistema. Caso não tenha, você pode fazer o download em [nodejs.org](https://nodejs.org/).
+
+## Como Rodar o Código
+
+
+1. Instale as dependências usando o npm.
+
+```bash
+npm install
+```
+
+2. Execute o script.
+
+```bash
+node index.js
+```
+
+O script fará uma requisição ao site do Google Finance para obter o valor atual do Bitcoin em reais. O resultado será exibido no console.
+
+## Nota sobre o User-Agent
+
+O script inclui um cabeçalho "User-Agent" no pedido HTTP para simular um navegador web. Isso pode ser necessário para evitar bloqueios por parte do site. Se você encontrar problemas de bloqueio, você pode querer ajustar o cabeçalho para se adequar ao comportamento de um navegador específico.
